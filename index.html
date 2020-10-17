@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tugas 45</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+    
+        <h1>Href Location</h1>
+
+        <p id="href"> </p>
+
+        <button type="submit">Tombol Lihat Href</button>
+
+
+        <script>
+            let l = location.href;
+            const tombol = document.querySelector('button');
+            const p = document.querySelector('p');
+
+            tombol.addEventListener('click', function() {
+                p.innerHTML = l;
+            });
+        </script>
+    </body>
+</html>
